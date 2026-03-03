@@ -37,7 +37,7 @@ const Carousel = () => {
 
         <div className="bg-black/50 text-white text-center absolute bottom-0 left-0 right-0 p-3">
           <h2 className="text-xl font-bold">{slides[currentIndex].title}</h2>
-          <p className="text-md">{slides[currentIndex].description}</p>
+          <p className="lg:text-md sm:text-sm">{slides[currentIndex].description}</p>
         </div>
       </div>
     </section>
