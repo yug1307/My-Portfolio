@@ -12,7 +12,7 @@ const slides = [
     id: 2,
     image: "/images/Yugaanter2.jpg",
     title: "🌟 My Mission",
-    description: "👉Explore my work, mission, and how I help students and young professionals carve their ideal career paths."
+    description: "👉Explore my work, mission, and how I help students and young professionals."
   }
 ];
 
