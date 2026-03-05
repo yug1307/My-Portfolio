@@ -35,9 +35,9 @@ const Carousel = () => {
           alt={slides[currentIndex].title}
           className="w-full h-auto object-cover"/>
 
-        <div className="bg-black/50 text-white text-center absolute bottom-0 left-0 right-0 p-3">
+        <div className="bg-black/50 text-white text-center absolute bottom-0 left-0 right-0 py-2 px-1">
           <h2 className="text-xl font-bold">{slides[currentIndex].title}</h2>
-          <p className="lg:text-md sm:text-sm">{slides[currentIndex].description}</p>
+          <p className="md:text-md sm:text-sm">{slides[currentIndex].description}</p>
         </div>
       </div>
     </section>
