@@ -19,7 +19,7 @@ export default function Portfolio() {
       <div className="orb w-80 h-80 bg-rose-600 top-1/2 -right-40" style={{animationDelay:"1.5s"}}/>
 
       {/* HERO */}
-      <section className="py-12 px-6 space-y-6">
+      <section className="py-12 px-3 space-y-6">
         <p className="fu text-xs tracking-[.3em] uppercase text-amber-400">Creative Developer & Designer</p>
 
         <h1 className="fu d1 pd text-6xl md:text-8xl font-black leading-none max-w-4xl">
