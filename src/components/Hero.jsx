@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Portfolio() {
-  const [open, setOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden" style={{fontFamily:"'DM Sans',sans-serif"}}>
