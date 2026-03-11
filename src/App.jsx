@@ -1,13 +1,10 @@
 import React, { Suspense } from 'react';
 import Topbar from './components/Topbar'
-import Carousel from './components/Carousel';
 import WhyMe from './components/WhyMe';
 import FooterOne from './components/FooterOne'
-import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb } from "react-icons/si";
-import { DiMysql } from "react-icons/di";
-
+import { Link } from 'react-router-dom';
 import './App.css'
+import MySkills from './components/Skills';
 
 const Services = React.lazy(() => import('./components/Services'));
 
@@ -15,37 +12,41 @@ const Services = React.lazy(() => import('./components/Services'));
   <Services />
 </Suspense>
 
-const services = [
-    { icon: <FaHtml5 size={36} />, title: "HTML" },
-    { icon: <FaCss3Alt size={36} />, title: "CSS" },
-    { icon: <FaJs size={36} />, title: "JavaScript" },
-    { icon: <FaReact size={36} />, title: "React" },
-    { icon: <SiTailwindcss size={36} />, title: "Tailwind" },
-    { icon: <FaJava size={36} />, title: "Java" },
-    { icon: <DiMysql size={36} />, title: "SQL" },
-    { icon: <SiMongodb size={36} />, title: "MongoDB" },
-  ];
-
 function App() {
   return ( 
     <>
       <Topbar /> 
-      <Carousel/>
-      <section className="bg-gradient-to-b from-fuchsia-500 to-cyan-500 py-16 px-6 space-y-6 my-12">
-        <h2 className="text-4xl font-bold text-center">🚀 My Skills</h2>
+      {/* Hero Section */}
+      <section className="bg-rose-100 py-10 px-5 space-y-6">
+        <h2 className="text-3xl font-bold">Crafting <span className="italic text-red-500">Digital</span> Experiences</h2>
+      
+        <p className="text-lg">I build thoughtful interfaces and digital products that live at the intersection of 
+          design rigour and technical precision
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {services.map((service, i) => (
-            <div
-              key={i}
-              className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl space-y-3 transition-transform hover:-translate-y-2"
-            >
-              <div className="flex justify-center text-blue-600">{service.icon}</div>
-              <h3 className="text-lg font-semibold text-center">{service.title}</h3>
-            </div>
-          ))}
+        <div className="text-lg space-x-4">
+          <Link to="/projects" className="bg-gray-800 text-white p-3">VIEW WORKS</Link>
+          <a href="tel:+91 9322276364">LET'S TALK</a>
         </div>
       </section>
+
+      {/* Work Experience */}
+      <section className="bg-rose-100 py-10 px-5 space-y-6 my-12">
+        <h2 className="text-3xl font-bold">Precision meets <span className="italic text-red-500">craft</span></h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <p className="space-y-6">
+            <div>I'm a <strong>creative developer and designer</strong> based in Gondia, specialising in building memorable 
+            digital products that balance aesthetic depth with functional clarity.</div>
+
+            <div>My practice spans full-stack development, visual identity systems, and interaction design — with a belief 
+            that <strong>the best digital experiences feel inevitable:</strong> obvious in hindsight, surprising in the moment.</div>
+          </p>
+
+          <img src="/images/Yugaanter.jpg" alt="" />
+        </div>
+      </section>
+      <MySkills/>
       <WhyMe />
       <FooterOne /> 
     </>
