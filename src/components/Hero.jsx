@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Hero() {
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden" style={{fontFamily:"'DM Sans',sans-serif"}}>
+    <div className="bg-slate-950 text-white overflow-x-hidden" style={{fontFamily:"'DM Sans',sans-serif"}}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
         .pd{font-family:'Playfair Display',serif}
@@ -19,10 +19,10 @@ export default function Hero() {
       <div className="orb w-80 h-80 bg-rose-600 top-1/2 -right-40" style={{animationDelay:"1.5s"}}/>
 
       {/* HERO */}
-      <section className="py-12 px-3 space-y-6">
-        <p className="fu text-xs tracking-[.3em] uppercase text-amber-400">Creative Developer & Designer</p>
+      <section className="py-12 px-8 space-y-6">
+        <p className="fu text-md tracking-[.3em] uppercase text-amber-400">Creative Developer & Designer</p>
 
-        <h1 className="fu d1 pd text-6xl md:text-8xl font-black leading-none max-w-4xl">
+        <h1 className="fu d1 pd lg:text-8xl text-5xl font-black leading-none max-w-4xl">
           Crafting<br/>
           <em className="not-italic text-transparent" style={{WebkitTextStroke:"1px rgba(255,255,255,0.2)"}}>Digital</em>{" "}
           Experiences
@@ -42,12 +42,13 @@ export default function Hero() {
 
       {/* ABOUT */}
       <section className="relative z-10 px-8 md:px-16 py-12 grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <p className="text-xs tracking-[.3em] uppercase text-amber-400 mb-5">About Me</p>
-          <h2 className="pd text-5xl font-bold leading-tight mb-8">Precision meets <em className="text-amber-400">craft</em></h2>
-          <p className="text-white/50 leading-relaxed mb-5">I'm a <strong className="text-white font-medium">creative developer and designer</strong> based in Gondia, specialising in building memorable digital products that balance aesthetic depth with functional clarity.</p>
+        <div className="space-y-7">
+          <p className="text-md tracking-[.3em] uppercase text-amber-400">About Me</p>
+          <h2 className="pd text-5xl font-bold leading-tight">Precision meets <em className="text-amber-400">craft</em></h2>
+          <p className="text-white/50 leading-relaxed">I'm a <strong className="text-white font-medium">creative developer and designer</strong> based in Gondia, specialising in building memorable digital products that balance aesthetic depth with functional clarity.</p>
           <p className="text-white/50 leading-relaxed">My practice spans full-stack development, visual identity systems, and interaction design — with a belief that <strong className="text-white font-medium">the best digital experiences feel inevitable.</strong></p>
-          <div className="mt-10 flex gap-8">
+          
+          <div className="flex gap-8">
             {[["3+","Years Exp."],["20+","Projects"],["100%","Passion"]].map(([n,l])=>(
               <div key={l}><div className="pd text-3xl font-bold text-amber-400">{n}</div><div className="text-xs text-white/40 mt-1 uppercase tracking-wider">{l}</div></div>
             ))}
