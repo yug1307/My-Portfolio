@@ -4,7 +4,7 @@ import WhyMe from './components/WhyMe';
 import FooterOne from './components/FooterOne'
 import './App.css'
 import MySkills from './components/Skills';
-import Portfolio from './components/Hero';
+import Hero from './components/Hero';
 
 const Services = React.lazy(() => import('./components/Services'));
 
@@ -16,7 +16,7 @@ function App() {
   return ( 
     <>
       <Topbar /> 
-      <Portfolio/>
+      <Hero/>
       <MySkills/>
       <WhyMe />
       <FooterOne /> 
