@@ -16,7 +16,7 @@ const socials = [
 const FooterOne = () =>{
   return(
     <>
-    <footer className="bg-zinc-950 py-12 px-6 border border-t-red-500" style={{fontFamily:"'DM Sans',sans-serif"}}>
+    <footer className="bg-slate-950 py-12 px-6 border border-t-red-500" style={{fontFamily:"'DM Sans',sans-serif"}}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@800&display=swap');
       .ff{font-family:'Fraunces',serif}`}</style>
 
