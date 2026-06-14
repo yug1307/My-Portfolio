@@ -58,7 +58,8 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute -inset-4 rounded-3xl blur-xl" style={{background:"linear-gradient(135deg,rgba(245,158,11,.1),rgba(239,68,68,.1))"}}/>
           <div className="relative rounded-2xl overflow-hidden border border-white/8 aspect-[4/5] bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Yugaanter" className="w-full h-full object-cover opacity-80"/>
+            <img src="images/Yugaanter.jpg" alt="Yugaanter" className="w-full h-full object-cover opacity-80"/>
+            
             <div className="absolute bottom-0 left-0 right-0 p-6" style={{background:"linear-gradient(to top,#020617,transparent)"}}>
               <p className="pd text-lg font-bold">Yugaanter Ramdas</p>
               <p className="text-xs text-white/50 mt-1">Based in Gondia, India</p>
