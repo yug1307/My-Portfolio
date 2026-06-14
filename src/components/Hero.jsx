@@ -61,7 +61,7 @@ export default function Hero() {
             <img src="images/Yugaanter.jpg" alt="Yugaanter" className="w-full h-full object-cover opacity-80"/>
             
             <div className="absolute bottom-0 left-0 right-0 p-6" style={{background:"linear-gradient(to top,#020617,transparent)"}}>
-              <p className="pd text-lg font-bold">Yugaanter Ramdas</p>
+              <p className="pd text-lg font-bold">Yugaanter Vashishtha</p>
               <p className="text-xs text-white/50 mt-1">Based in Gondia, India</p>
             </div>
           </div>
