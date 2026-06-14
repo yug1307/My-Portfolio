@@ -48,7 +48,7 @@ const About = () => {
 
           {/* Intro card */}
           <div className="fu d2 rounded-2xl border border-white/8 bg-white/3 p-8 text-white/60 leading-relaxed text-[18px]">
-            I'm <strong className="text-white">Yugaanter Ramdas</strong>, an entrepreneur, IT professional, and passionate 
+            I'm <strong className="text-white">Yugaanter Vashishtha</strong>, an entrepreneur, IT professional, and passionate 
             youth mentor dedicated to using technology as a powerful tool for personal and national growth. From the very 
             beginning, my journey has been driven by a simple yet powerful belief: <strong className="text-amber-400">empowering
             the youth is the key to shaping the future of our nation.</strong>
