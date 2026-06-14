@@ -12,7 +12,7 @@ const Topbar = () => {
         
         {/* Logo */}
         <div className="pd text-xl text-white tracking-widest uppercase">
-          Yug<span className="text-amber-400">aanter</span> Ramdas
+          Yug<span className="text-amber-400">aanter</span> Vashishtha
         </div>
 
         {/* Desktop Menu */}
