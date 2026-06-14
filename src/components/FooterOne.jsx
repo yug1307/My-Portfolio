@@ -66,7 +66,7 @@ const FooterOne = () =>{
         </div>
 
         {/* Bottom */}
-        <div className="text-center text-md text-white">© {new Date().getFullYear()} Yugaanter Ramdas. All Rights Reserved</div>
+        <div className="text-center text-md text-white">© {new Date().getFullYear()} Yugaanter Vashishtha. All Rights Reserved</div>
       </section>
     </footer>
     </>
